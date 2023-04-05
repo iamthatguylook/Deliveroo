@@ -10,6 +10,7 @@ npx create-expo-app deliveroo
 
 # Configure Tailwind
 
+Add tailwind to the babel file
 create tailwind.config.js and then make sure to put tailwind in the directories
 
 # Some TailWind Hacks
@@ -29,3 +30,7 @@ h-7 w-7 height is 7 as well as width
 # Use hero easy icons with react native
 
 use the Name on the website as well use size and color attributes
+
+# Just a small organising tip
+
+folder names should be small and file name in each folder should start with capital and camel case the exports should be same name as the file names
