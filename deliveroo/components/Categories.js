@@ -7,10 +7,13 @@ import CategoryCard from "./CategoryCard";
 export default function Categories() {
   return (
     <ScrollView contentContainerStyle={{ paddingHorizontal: 15, paddingTop: 10 }} horizontal showsHorizontalScrollIndicator={false}>
-      <CategoryCard imgUrl="https://links.papareact.com/wru" title="Title1" />
-      <CategoryCard imgUrl="https://links.papareact.com/wru" title="Title2" />
-      <CategoryCard imgUrl="https://links.papareact.com/wru" title="Title3" />
-      <CategoryCard imgUrl="https://links.papareact.com/wru" title="Title4" />
+      <CategoryCard imgUrl="https://links.papareact.com/gn7" title="Title1" />
+      <CategoryCard imgUrl="https://links.papareact.com/gn7" title="Title2" />
+      <CategoryCard imgUrl="https://links.papareact.com/gn7" title="Title3" />
+      <CategoryCard imgUrl="https://links.papareact.com/gn7" title="Title4" />
+      <CategoryCard imgUrl="https://links.papareact.com/gn7" title="Title5" />
+      <CategoryCard imgUrl="https://links.papareact.com/gn7" title="Title6" />
+      <CategoryCard imgUrl="https://links.papareact.com/gn7" title="Title7" />
     </ScrollView>
   );
 }

@@ -4,6 +4,7 @@ import { View, Button, Text, Image, SafeAreaView, StyleSheet, StatusBar, TextInp
 import { UserIcon, ChevronDownIcon, MagnifyingGlassIcon, AdjustmentsHorizontalIcon } from "react-native-heroicons/outline";
 import { Svg, Path } from "react-native-svg";
 import Categories from "../components/Categories";
+import FeaturedRow from "../components/FeaturedRow";
 export default function HomeScreen() {
   const navigation = useNavigation();
   useLayoutEffect(() => {
@@ -12,7 +13,7 @@ export default function HomeScreen() {
     });
   }, []);
   return (
-    <SafeAreaView>
+    <SafeAreaView className="flex-1">
       {/* Header */}
       <View className="bg-white pt-5">
         <View className="flex-row pb-3 items-center mx-4 space-x-2">
@@ -41,9 +42,14 @@ export default function HomeScreen() {
       {/* Body */}
 
       {/* Catagories */}
+      <ScrollView className="mb-1">
+        <Categories />
+        {/* Featured Rows */}
 
-      <Categories />
-      {/* Featured Rows */}
+        <FeaturedRow id="1" title="Featured" description="Paid placements from our partners" featuredCategory="featured" />
+        <FeaturedRow id="2" title="Tasty discounts" description="Everyone been enjoying these juicy discounts" featuredCategory="discounts" />
+        <FeaturedRow id="3" title="Offers Near You" description="Why not support your local restaurants tonight" featuredCategory="offers" />
+      </ScrollView>
     </SafeAreaView>
   );
 }
