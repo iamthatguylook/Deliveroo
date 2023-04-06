@@ -4,13 +4,14 @@ import { View, Button, Text, Image, SafeAreaView, StyleSheet, StatusBar, TextInp
 import { UserIcon, ChevronDownIcon, MagnifyingGlassIcon, AdjustmentsHorizontalIcon } from "react-native-heroicons/outline";
 import CategoryCard from "./CategoryCard";
 import client from "../sanity";
-import { urlFor } from "../sanity";
+import { urlFor } from "../sanity"; // To change sanity image URL to normal URL
 
 export default function Categories() {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
     client.fetch(`*[_type=="category"]`).then((data) => {
+      //Use grouk to fetch certain query
       setCategories(data);
     });
   }, []);

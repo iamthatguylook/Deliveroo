@@ -8,6 +8,7 @@ export default function CategoryCard({ imgUrl, title }) {
   return (
     <TouchableOpacity className="bg-slate-400 relative mr-2">
       <Image source={{ uri: urlFor(imgUrl).url() }} className="w-20 h-20 rounded" />
+      {/* Change url using url For from sanity URL to nomal URL */}
       <Text className="absolute bottom-1 left-1 text-white font-bold">{title}</Text>
     </TouchableOpacity>
   );
