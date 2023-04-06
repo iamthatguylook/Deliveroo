@@ -2,10 +2,12 @@ import { useNavigation } from "@react-navigation/native";
 import React, { useLayoutEffect } from "react";
 import { View, Button, Text, Image, SafeAreaView, StyleSheet, StatusBar, TextInput, ScrollView, TouchableOpacity } from "react-native";
 import { MapPinIcon, ArrowRightIcon, UserIcon, ChevronDownIcon, MagnifyingGlassIcon, AdjustmentsHorizontalIcon, StarIcon, MapIcon } from "react-native-heroicons/outline";
+import { urlFor } from "../sanity";
+import "react-native-url-polyfill/auto";
 export default function RestaurantCard({ id, imgUrl, title, short_description, rating, genre, address, dishes, long, lati }) {
   return (
     <TouchableOpacity className="bg-white mr-3 shadow">
-      <Image source={{ uri: imgUrl }} className="w-64 h-36 rounded-sm" />
+      <Image source={{ uri: urlFor(imgUrl).url() }} className="w-64 h-36 rounded-sm" />
       <View className="px-3 pb-4">
         <Text className="text-large font-bold pt-2">{title}</Text>
         <View className="flex-row items-center space-x-1">
