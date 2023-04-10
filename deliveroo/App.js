@@ -7,6 +7,7 @@ import HomeScreen from "./screens/home";
 import RestaurantScreen from "./screens/restaurant";
 import BasketScreen from "./screens/basket";
 import PreparingOrderScreen from "./screens/preparing";
+import DeliveryScreen from "./screens/delivery";
 import { Provider } from "react-redux";
 import { store } from "./store";
 
@@ -21,6 +22,7 @@ export default function App() {
             <StackNavigator.Screen name="Restaurant" component={RestaurantScreen}></StackNavigator.Screen>
             <StackNavigator.Screen name="Basket" component={BasketScreen} options={{ presentation: "modal", headerShown: false }}></StackNavigator.Screen>
             <StackNavigator.Screen name="Preparing" component={PreparingOrderScreen} options={{ presentation: "fullScreenModal", headerShown: false }}></StackNavigator.Screen>
+            <StackNavigator.Screen name="Delivery" component={DeliveryScreen} options={{ presentation: "fullScreenModal", headerShown: false }}></StackNavigator.Screen>
           </StackNavigator.Navigator>
         </TailwindProvider>
       </Provider>

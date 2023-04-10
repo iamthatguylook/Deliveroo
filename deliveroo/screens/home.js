@@ -35,7 +35,7 @@ export default function HomeScreen() {
         setFeaturedCategories(data);
       });
   }, []);
-  console.log(featuredCategories);
+
   return (
     <SafeAreaView className="flex-1">
       {/* Header */}

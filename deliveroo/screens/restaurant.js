@@ -40,7 +40,7 @@ export default function RestaurantScreen() {
             <Text className="text-3xl font-bold">{title}</Text>
             <View className="flex-row space-x-2 my-1">
               <View className="flex-row items-center space-x-1">
-                <StarIcon size={30} color="green" opacity={0.5} />
+                <StarIcon size={30} color="#00CCBB" opacity={0.5} />
                 <Text className="text-xs text-gray-500">
                   <Text className="text-green-500">{rating}</Text> . {genre}
                 </Text>

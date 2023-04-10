@@ -5,19 +5,19 @@ import { useNavigation } from "@react-navigation/native";
 import * as Animatable from "react-native-animatable";
 import * as Progress from "react-native-progress";
 export default function PreparingOrderScreen() {
-  //   const navigation = useNavigation();
-  //   useEffect(() => {
-  //     setTimeout(() => {
-  //       navigation.navigate("Delivery");
-  //     }, 3000);
-  //   });
+  const navigation = useNavigation();
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.navigate("Delivery");
+    }, 3000);
+  });
   return (
     <SafeAreaView className="bg-[#00ccbb] flex-1 justify-center items-center">
       <Animatable.Image source={require("../assets/deliveroo-gif.gif")} animation="slideInUp" iterationCount={1} className="h-96 w-96"></Animatable.Image>
       <Animatable.Text animation="slideInUp" iterationCount={1} className="text-lg my-10 text-white font-bold text-center">
         Waiting for Restaurant to accept your order
       </Animatable.Text>
-      <Progress.Bar width={200} color="white" />
+      <Progress.CircleSnail size={50} color={"white"} />
     </SafeAreaView>
   );
 }
