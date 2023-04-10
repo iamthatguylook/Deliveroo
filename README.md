@@ -37,8 +37,4 @@ folder names should be small and file name in each folder should start with capi
 
 # App demo pictures
 
-image.png
-image.png
-image.png
-image.png
-image.png
+![image](https://user-images.githubusercontent.com/70969669/230840375-d9255c80-399c-41cf-aa22-b2080cb10c7d.png)
