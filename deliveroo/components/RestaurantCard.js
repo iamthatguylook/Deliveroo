@@ -1,12 +1,30 @@
-import { useNavigation } from "@react-navigation/native";
-import React, { useLayoutEffect } from "react";
-import { View, Button, Text, Image, SafeAreaView, StyleSheet, StatusBar, TextInput, ScrollView, TouchableOpacity } from "react-native";
-import { MapPinIcon, ArrowRightIcon, UserIcon, ChevronDownIcon, MagnifyingGlassIcon, AdjustmentsHorizontalIcon, StarIcon, MapIcon } from "react-native-heroicons/outline";
+import React from "react";
+import { View, Text, Image, TouchableOpacity } from "react-native";
+import { StarIcon, MapIcon } from "react-native-heroicons/outline";
 import { urlFor } from "../sanity";
+import { useNavigation } from "@react-navigation/native";
 import "react-native-url-polyfill/auto";
+
 export default function RestaurantCard({ id, imgUrl, title, short_description, rating, genre, address, dishes, long, lati }) {
+  const NavigationRestaurant = useNavigation();
   return (
-    <TouchableOpacity className="bg-white mr-3 shadow">
+    <TouchableOpacity
+      className="bg-white mr-3 shadow"
+      onPress={() => {
+        NavigationRestaurant.navigate("Restaurant", {
+          id,
+          imgUrl,
+          title,
+          short_description,
+          rating,
+          genre,
+          address,
+          dishes,
+          long,
+          lati,
+        });
+      }}
+    >
       <Image source={{ uri: urlFor(imgUrl).url() }} className="w-64 h-36 rounded-sm" />
       <View className="px-3 pb-4">
         <Text className="text-large font-bold pt-2">{title}</Text>
