@@ -34,3 +34,11 @@ use the Name on the website as well use size and color attributes
 # Just a small organising tip
 
 folder names should be small and file name in each folder should start with capital and camel case the exports should be same name as the file names
+
+# App demo pictures
+
+image.png
+image.png
+image.png
+image.png
+image.png
