@@ -38,3 +38,11 @@ folder names should be small and file name in each folder should start with capi
 # App demo pictures
 
 ![image](https://user-images.githubusercontent.com/70969669/230840375-d9255c80-399c-41cf-aa22-b2080cb10c7d.png)
+![image](https://user-images.githubusercontent.com/70969669/230840566-74a9b266-ff66-4e02-8199-0cda57c3a4f1.png)
+![image](https://user-images.githubusercontent.com/70969669/230840625-64ddf96d-4df1-438c-aaab-d56feddcae12.png)
+![image](https://user-images.githubusercontent.com/70969669/230840669-72804bff-272d-4cb4-8f20-1a7e9f0b8538.png)
+![image](https://user-images.githubusercontent.com/70969669/230840720-2eb1746b-8a6e-4aa3-8a42-1e853240e86b.png)
+
+
+
+
